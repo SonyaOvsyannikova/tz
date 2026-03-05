@@ -11,6 +11,7 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path={'/'} element={<AuthPage />} />
                 <Route path={'/auth'} element={<AuthPage />} />
                 <Route path={'/product'} element={<ProductPage />} />
             </Routes>

@@ -36,16 +36,19 @@ const Product = () => {
             cell: ({ row }) => (
                 <div className={cl.titleCell}>
                     <span className={cl.square}></span>
-                    <div>
+                    <div className={cl.productName}>
                         <p className={cl.productTitle}>{row.original.title}</p>
-                        <p>{row.original.category}</p>
+                        <p className={cl.productDescription}>{row.original.category}</p>
                     </div>
                 </div>
             )
         },
         {
             accessorKey: 'brand',
-            header: 'Вендор'
+            header: 'Вендор',
+            cell: ({ row }) => (
+                <p className={cl.brandDescription}>{row.original.brand}</p>
+            )
         },
         {
             accessorKey: 'sku',
@@ -54,7 +57,12 @@ const Product = () => {
         {
             accessorKey: 'rating',
             header: 'Оценка',
-            cell: ({ getValue }) => `${getValue()}/5`
+            cell: ({ getValue }) => {
+                const rating = getValue() as number;
+                return (
+                    <p className={rating < 3 ? cl.ratingBad : cl.rating}>{rating}<span style={{ color: 'black' }}>/5</span> </p>
+                )
+            }
         },
         {
             accessorKey: 'price',

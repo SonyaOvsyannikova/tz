@@ -6,6 +6,7 @@
 
 .table thead tr {
   height: 73px;
+
   &.allSelected {
     border-left: 3px solid #3C538E;
   }
@@ -16,6 +17,12 @@
     color: #8B8B8B;
     text-align: left;
     vertical-align: middle;
+    &:hover {
+      background-color: #eee;
+      cursor: pointer;
+      border-radius: 4px;
+      transition-duration: 0.9ms;
+    }
 
     &:first-child {
       width: 20px;
@@ -29,6 +36,7 @@
       min-width: 276px;
       max-width: 276px;
       padding-right: 177px;
+
     }
 
     &:nth-child(3) {
@@ -63,9 +71,14 @@
 .table tbody tr {
   height: 71px;
   border-bottom: 1px solid #E2E2E2;
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
 
   td {
     border-bottom: 1px solid #E2E2E2;
+
 
     &:first-child {
       width: 40px;
