@@ -1,0 +1,47 @@
+.tableHeaderButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+}
+.headerButton {
+  padding: 10px 20px;
+  background-color: var(--color-blue);
+  border-radius: var(--border-radius-s);
+  border: none;
+  color: var(--color-white);
+}
+.addButton {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.addButtonDesc {
+  font-size: 14px;
+  margin: 0;
+}
+.refreshButton {
+  border-radius: var(--border-radius);
+  border: 1px solid #ECECEB;
+  padding: 13px;
+  background-color: var(--color-white);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.refreshIcon {
+  width: 17px;
+  height: 17px;
+  color: #515161;
+}

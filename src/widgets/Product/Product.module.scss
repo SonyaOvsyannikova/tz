@@ -1,0 +1,106 @@
+.productWidget {
+  padding: 30px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  height: 100%;
+}
+.square {
+  background-color: #C4C4C4;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ECECEB;
+  flex-shrink: 0;
+}
+.titleCell {
+  display: flex;
+  column-gap:18px;
+}
+.addButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242EDB;
+  border-radius: var(--border-radius-xxl);
+  width: 52px;
+  height: 27px;
+  border: none;
+  padding: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.addButton::before,
+.addButton::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.addButton::before {
+  width: 16px;
+  height: 2px;
+}
+
+.addButton::after {
+  width: 2px;
+  height: 16px;
+}
+.moreButton {
+  border-radius: 50%;
+  border: 2px solid #B2B3B9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+
+.moreButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.moreButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #B2B3B9;
+  box-shadow: -6px 0 0 #B2B3B9, 6px 0 0 #B2B3B9;
+}
+.checkBox {
+  appearance: none;
+  position: relative;
+  border: 1px solid #B2B3B9;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--border-radius-s);
+}
+.checkBox:checked {
+  background-color: #3C538E;
+  border: 1px solid #B2B3B9;
+}
+.checkBox::after {
+
+}
+
+

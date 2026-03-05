@@ -1,0 +1,32 @@
+@use 'helpers/mixins' as *;
+@use './fonts' as *;
+
+html {
+  .is-locked {
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: var(--font-family-base-start);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-page);
+  color: var(--color-dark-grey);
+}
+h1,.h1 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a,
+button,
+input,
+textarea,
+svg * {
+  transition: 0.2s;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.searchHeader {
+  display: flex;
+  padding: 26px 30px;
+  align-items: center;
+  column-gap: 400px;
+  background-color: var(--color-white);
+}
+.searchSection {
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.searchInput {
+  padding: 12px 52px;
+  background-color: var(--background-input);
+  height: 48px;
+  width: 1023px;
+  border: none;
+  border-radius: var(--border-radius);
+}
